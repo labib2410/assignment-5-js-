@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Wheather</title>
+    <link rel="icon" href="images/images.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Handjet:wght@100..900&family=Sofia&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="  overflow-auto">
+    <nav class="navbar ">
+        <div class="container-fluid ">
+            <a class="navbar-brand fs-2 p-3" href="#">Wheather</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Wheather</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                    </ul>
+
+                    <form class="d-flex mt-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <header class="text-center my-5 text-danger">
+        <h1>
+            "Weather Monitoring"
+        </h1>
+    </header>
+    <div class="container position-relative text-center z-3 ">
+        <input type="text" class="form-control mt-5 w-50 position-relative mx-auto " placeholder="Enter Place Name ...."
+            id="searchInput">
+        <button class="btn btn-outline-danger mx-auto translate-middle-x mt-2 f" id="searchBtn">Search</button>
+    </div>
+    <div class="container mt-5">
+        <div class="row" id="rowData">
+
+        </div>
+    </div>
+    <div id="background-wrap">
+        <div class="x1">
+            <div class="cloud"></div>
+        </div>
+
+        <div class="x2">
+            <div class="cloud"></div>
+        </div>
+
+        <div class="x3">
+            <div class="cloud"></div>
+        </div>
+
+        <div class="x4">
+            <div class="cloud"></div>
+        </div>
+
+        <div class="x5">
+            <div class="cloud"></div>
+        </div>
+    </div>
+    <footer class="mt-5 p-5 container-fluid position-relative bottom-0 ">
+        <div class="con d-flex justify-content-between ">
+            <div class="container d-flex">
+                <input type="text" class="form-control  w-50  d-inline-block" placeholder="Enter your email address">
+                <button class="btn btn-outline-info d-inline-block">Subscribe</button>
+            </div>
+            <div class="footer-social d-flex justify-content-between text-light">
+                <span class=" rounded-circle p-2 m-1"> <i class="fa-brands fa-twitter fs-3 "></i></span>
+                <span class=" rounded-circle p-2 m-1"> <i class="fa-brands fa-instagram fs-3 "></i></span>
+                <span class=" rounded-circle p-2 m-1"> <i class="fa-brands fa-tiktok fs-3 "></i></span>
+                <span class=" rounded-circle p-2 m-1"> <i class="fa-brands fa-whatsapp fs-3 "></i></span>
+
+            </div>
+        </div>
+        <div class="copy mt-4">
+            <p class="lead fw-bolder text-danger">Copyright 2014 Company name. Designed by Themezy. All rights reserved
+            </p>
+        </div>
+    </footer>
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js">
+    </script>
+</body>
+
+</html>
